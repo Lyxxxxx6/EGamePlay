@@ -18,7 +18,7 @@ namespace ECS
 
         public const int Mask14bit = 0x3fff;
         public const int Mask30bit = 0x3fffffff;
-        public const int Mask20bit = 0xfffff;
+        public const int Mask20bit = 0xfffff; //限制最大数值 & 提取指定位数
 
         public EcsNode(ushort ecsIndex)
         {
@@ -99,6 +99,10 @@ namespace ECS
             DriveTypes.Add(typeof(T));
         }
 
+        /// <summary>
+        /// ECS架构 系统注册入口,按业务逻辑分类存储system，为后续的驱动流程准备。
+        /// </summary>
+        /// <param name="types"></param>
         public void AddSystems(Type[] types)
         {
             AllTypes = types;
