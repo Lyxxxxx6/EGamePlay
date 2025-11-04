@@ -11,6 +11,9 @@ using ECSGame;
 
 namespace EGamePlay
 {
+    /// <summary>
+    /// 行动点system
+    /// </summary>
     public class BehaviourPointSystem : AComponentSystem<CombatEntity, BehaviourPointComponent>,
         IAwake<CombatEntity, BehaviourPointComponent>
     {
