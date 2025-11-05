@@ -9,6 +9,9 @@ using ET;
 
 namespace EGamePlay
 {
+    /// <summary>
+    /// 时间状态观察系统
+    /// </summary>
     public class TimeStateObserveSystem : AComponentSystem<AbilityTrigger, TimeStateObserveComponent>,
         IAwake<AbilityTrigger, TimeStateObserveComponent>,
         IDestroy<AbilityTrigger, TimeStateObserveComponent>

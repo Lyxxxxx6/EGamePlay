@@ -9,7 +9,7 @@ using Unity.Mathematics;
 namespace EGamePlay.Combat
 {
     /// <summary>
-    /// 
+    /// 特效执行组件
     /// </summary>
     public class ExecuteParticleEffectComponent : ECS.EcsComponent
     {
