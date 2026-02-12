@@ -26,11 +26,11 @@ namespace EGamePlay.Combat
         {
             get
             {
-                _instance = AssetDatabase.LoadAssetAtPath<AbilityManagerObject>("Assets/Art.RpgExample/Resources/AbilityManager.asset");
+                _instance = AssetDatabase.LoadAssetAtPath<AbilityManagerObject>("Assets/GameResources.RpgExample/Resources/AbilityManager.asset");
                 if (_instance == null)
                 {
                     _instance = new AbilityManagerObject();
-                    AssetDatabase.CreateAsset(_instance, "Assets/Art.RpgExample/Resources/AbilityManager.asset");
+                    AssetDatabase.CreateAsset(_instance, "Assets/GameResources.RpgExample/Resources/AbilityManager.asset");
                     AssetDatabase.SaveAssets();
                     AssetDatabase.Refresh();
                 }
@@ -41,9 +41,9 @@ namespace EGamePlay.Combat
 
         //public string ObjectAssetFolder = "Assets/Resources";
 
-        public string SkillAssetFolder = "Assets/Art.RpgExample/Resources/AbilityObjects/Skill";
-        public string BuffAssetFolder = "Assets/Art.RpgExample/Resources/AbilityObjects/Buff";
-        public string ExecutionAssetFolder = "Assets/Art.RpgExample/Resources/ExecutionObjects";
+        public string SkillAssetFolder = "Assets/GameResources.RpgExample/Resources/AbilityObjects/Skill";
+        public string BuffAssetFolder = "Assets/GameResources.RpgExample/Resources/AbilityObjects/Buff";
+        public string ExecutionAssetFolder = "Assets/GameResources.RpgExample/Resources/ExecutionObjects";
 
         //public string SkillExecutionAssetFolder = "Assets/Resources/ExecutionObjects";
         //public string StatusExecutionAssetFolder = "Assets/Resources/ExecutionObjects";
